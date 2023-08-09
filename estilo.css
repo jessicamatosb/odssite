@@ -1,0 +1,246 @@
+
+html {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.header_nav li {  /*Menu */
+   padding: 2rem 0;
+   display:inline-block;
+ }
+
+ .header_nav a {  /*Menu */
+   padding: .75em 1.15em;
+    border: solid 1px;
+    text-decoration: none
+ }
+
+ .header_nav a:hover { /*sombra botão menu*/
+   background-color: #4CAF50;
+ }
+
+ .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--primary-color);
+   padding: 0rem 0;
+   gap: .6rem;
+   flex-wrap: wrap;
+}
+.logo {
+   border-radius: 50%;
+}
+
+ .container {
+   position: relative;
+ }
+
+#texto {  /* título site */
+   position: absolute;
+   font-size: 32px;
+   color:#031A42;
+  left: 700px;
+   top: 150px;
+
+ }
+
+.btn{           /*botão ods*/
+   background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+
+}
+
+.sobre_content{   /*O que são? */
+   display: inline-block;
+   width: 30%;
+   box-sizing: border-box; /* restringe o padding à área da li */
+   text-align: center; 
+   padding: 15px; /* espaçamento interno entre o conteúdo e a borda da li */
+   font-size: 21px; 
+   vertical-align: top; /* alinha as li no topo da linha */
+
+}
+
+.video{    /*O que são? */
+   display: inline-block;
+   float: right;
+   padding: 70px; 
+ 
+}
+
+ .wrapperContainer {
+   padding-top: 1px;
+}
+
+.wrapperContainer-dark2{   /*Sobre */
+   background-color: #FFFFFF;
+}
+
+.wrapperContainer-light{    /*Causas*/
+   background-color: #95C49B;
+}
+
+.wrapperContainer-dark3{  /*Efeitos*/
+   background-color:#F0EAE9;
+}
+
+.wrapperContainer-light2 {    /*Faça sua Parte*/
+   background-color: #8C97AA;
+}
+
+.wrapperContainer-light3{     /*Contato  footer*/
+   background-color: #ffffff;
+   padding: 10px;
+   text-align: center;
+   
+}
+
+body{ 
+   margin: 0;
+   background-color: #ffffff;
+   font-size: 16px;
+}
+
+article ul{
+   font-size: 0; /* elimina espaços entre as li */
+
+}
+
+article ul li img{
+   width: 100%; /* ajusta a largura da imagem dentro da li */
+   display: block; /* convertendo para block elimina espaço natural abaixo da imagem */
+}
+
+article ul, article ul li{ /* remove espaços e o bullet da ul e das li */
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+article ul li{
+   display: inline-block;
+   width: 25%;
+   box-sizing: border-box; /* restringe o padding à área da li */
+   text-align: center; 
+   padding: 15px; /* espaçamento interno entre o conteúdo e a borda da li */
+   font-size: 20px; 
+   vertical-align: top; /* alinha as li no topo da linha */
+}
+
+.section_title { /*títulos*/
+   padding: 7rem 0;
+   text-align: center;
+   margin: 0;
+   color: #031A42;
+   font-size: 30px;
+}
+.sobre_title { /*títulos*/
+   color: #031A42;
+} 
+
+
+form{
+   width: 90%;
+   min-width: 28.125em;
+   max-width: 35em;
+   background-color: #e9e6e6;
+   padding: 1em;
+ 
+}
+fieldset{
+   border: none;
+   padding: 0;
+   margin: 0;
+}
+
+label,
+input,
+textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea{
+   background-color: rgba(0,0,0,.3);
+   border: 2px solid transparent;
+   border-bottom-color: #cccccc;
+   padding: .75em;
+   margin: .5em 0 2.5em;
+   color: white;
+   outline: 0;
+}
+legend{
+   padding: .5em;
+   text-align: center;
+   font-weight: bold;
+   color: #8e999a;
+   font-size: 1.3em;
+}
+.btnform{
+   background-color: #2a2727;
+   color: white;
+   cursor: pointer;
+   padding: .7em;
+   font-size: 1.2em;
+   border: none;
+
+}
+.formcontainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+}
+.textform{
+   font-size: 20px;
+}
+
+.footer {
+   font-size:20px;
+   text-align: center;
+   padding: 15px;
+   list-style: none;
+
+}
+
+.footer a {
+   color: inherit;
+}
+
+.creditos ul{
+   list-style: none;
+}
+
+
+
+@media all and (max-width: 768px){
+   
+   .header_nav li {
+      visibility: hidden;
+   }
+
+  
+
+   .wrapperContainer-fixed,.video {
+      display:block;
+      width:80%;
+      padding:0;
+      margin:10px auto;
+      float:none;
+      text-align: center;
+      
+    }
+
+
+   }
+  
+   
